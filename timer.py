@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argparse
 import re
 import time
@@ -40,7 +42,7 @@ def timer(seconds):
 
 def print_ascii_image():
     ascii_images = [
-        '''
+            '''
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠠⢄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⢉⣶⣦⣄⣀⣀⠀⠀⠀⣠⣤⣶⣶⣶⠤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⡿⠋⠉⠉⠀⠈⣩⣿⣾⣿⢋⣉⠻⡟⣻⣿⣶⣿⣦⣀⣠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -209,7 +211,7 @@ def print_ascii_image():
     print(random_image)
 
 def play_sound():
-    sound_file = 'sound.mp3'  # Ruta al archivo de sonido
+    sound_file = '/home/cybersanguche/mis_tools/timerNSFW/sound.mp3'  # Ruta al archivo de sonido
     subprocess.run(['mpv', sound_file])
 
 if __name__ == '__main__':
