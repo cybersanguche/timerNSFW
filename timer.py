@@ -211,8 +211,17 @@ def print_ascii_image():
     print(random_image)
 
 def play_sound():
-    sound_file = '/home/cybersanguche/mis_tools/timerNSFW/sound.mp3'  # Ruta al archivo de sonido
-    subprocess.run(['mpv', sound_file])
+    sound_files = [
+        '/home/cybersanguche/mis_tools/timerNSFW/sound1.mp3'  #,
+        # '/home/cybersanguche/mis_tools/timerNSFW/sound2.mp3',
+        # '/home/cybersanguche/mis_tools/timerNSFW/sound3.mp3',
+        # Agrega aquí la ruta de otros archivos de sonido
+    ]
+    random_sound = random.choice(sound_files)
+    subprocess.run(['mpv', random_sound])
+
+    # sound_file = '/home/cybersanguche/mis_tools/timerNSFW/sound.mp3'  # Ruta al archivo de sonido 
+    # subprocess.run(['mpv', sound_file])
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Temporizador desde la terminal')
